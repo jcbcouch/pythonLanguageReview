@@ -53,3 +53,9 @@ mydict3.update(mydict4)  # update existing keys, add new key value pairs
 # Boolean as a dictionary key. However, neither a list nor another dictionary can serve as a dictionary key,
 # because lists and dictionaries are mutable. Values, on the other hand, can be any type and can be used more than once.
 # they can contain tuples if they only contain immutable elements
+print("")
+mydict5 = {3: 9, 6: 36, 9: 81}  # each index is a number
+value2 = mydict5[3]  # grabs the first index; 3
+
+mytuple = (8, 7)
+mydict6 = {mytuple: 15}  # index is a tuple
