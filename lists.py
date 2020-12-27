@@ -34,6 +34,7 @@ c = mylist3[5:]  # [6,7,8,9] no stop, goes to the end
 d = mylist3[1:8:2]  # [2,4,6,8] start : stop : step
 e = mylist3[-1:-10:-2]  # first number starts from the right
 # because the step makes its reverse
+f = mylist3[::-1]  # easy way to reverse the list
 
 list_org = [1, 2, 3, 4]
 list_copy = list_org  # pass memory reference
@@ -48,4 +49,4 @@ list_copy4.append(500)  # this will not modify org
 a_list = [1, 2, 3, 4, 5]
 b_list = [i*i for i in a_list]  # [1,4,9,16,25]
 
-print(b_list)
+print(f)

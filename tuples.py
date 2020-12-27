@@ -27,9 +27,23 @@ firstp = mytuple5.index('p')  # returns index of first element that matches
 mylist = list(mytuple)  # convert a tuple to a list
 tupleFromList = tuple(mylist)  # convert a list to a tuple
 
-a = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+# slicing same as lists
+a = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 b = a[2:5]  # 3,4,5 include start, exclude end
 c = a[:5]  # start from beginning
 d = a[3:]  # stop at the end
+e = a[1:8:2]  # [2,4,6,8] start : stop : step
+f = a[-1:-10:-2]  # first number starts from the right
+# because the step makes its reverse
+g = a[::-1]  # easy way to reverse the tuple
 
-print(d)
+mytuple6 = "Max", 28, "Boston"
+name, age, city = mytuple6  # recieve these variables from the tuple
+# like destructuring in javascript
+# you must include a varialbe for each element in the tuple
+mytuple7 = (0, 1, 2, 3, 4)
+i1, *i2, i3 = mytuple7  # a trick to pull everything out
+# i1 is the first element, i3 is the last, i2 is a list of everything inbetween
+
+
+print(i2)
